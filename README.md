@@ -154,6 +154,3 @@ Feedstock Maintainers
 * [@joXemMx](https://github.com/joXemMx/)
 * [@mfleisch](https://github.com/mfleisch/)
 
-
-<!-- dummy commit to enable rerendering -->
-
