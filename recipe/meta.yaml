@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/boecker-lab/sirius-client-openAPI/archive/refs/tags/v{{ version }}.zip
-  sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
+  url: https://github.com/boecker-lab/sirius-client-openAPI/archive/refs/tags/{{ version }}.zip
+  sha256: 63e0066f517bdc457d9adb0c920e4f94c67d178d68ffe7f19ad2ab8ce43eb8d6
 
 build:
   noarch: generic
