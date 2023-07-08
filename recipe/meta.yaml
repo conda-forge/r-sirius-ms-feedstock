@@ -22,20 +22,20 @@ requirements:
     - m2-zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - r-base >= 3.5.0
+    - r-base >=3.5.0
     - r-jsonlite
     - r-httr2
     - r-r6
     - r-base64enc
     - r-stringr
   run:
-    - r-base >= 3.5.0
+    - r-base >=3.5.0
     - r-jsonlite
     - r-httr2
     - r-r6
     - r-base64enc
     - r-stringr
-    - sirius-ms = 5.7.0
+    - sirius-ms =5.7.0
 
 test:
   files:
