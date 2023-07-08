@@ -1,18 +1,17 @@
 {% set version = "0.9" %}
 {% set name = "r-sirius-ms" %}
-{% set commit = "d1274f51b2af44c09def72fa3628f82a9e8de6b5" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/boecker-lab/sirius-client-openAPI/archive/{{ commit }}.zip
-  sha256: 1edef52c472b9984b74532cf41ae9389f4191579085fd981922d8356d0ba887a
+  url: https://github.com/boecker-lab/sirius-client-openAPI/archive/refs/tags/{{ version }}.zip
+  sha256: 63e0066f517bdc457d9adb0c920e4f94c67d178d68ffe7f19ad2ab8ce43eb8d6
 
 build:
   noarch: generic
-  number: 0
+  number: 1
   merge_build_host: True  # [win]
   rpaths:
     - lib/R/lib/
@@ -36,7 +35,7 @@ requirements:
     - r-r6
     - r-base64enc
     - r-stringr
-    - sirius-ms
+    - sirius-ms =5.7.0
 
 test:
   files:
