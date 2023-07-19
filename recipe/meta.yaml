@@ -20,7 +20,7 @@ build:
 requirements:
   build:
     - m2-zip               # [win]
-    - cross-r-base >=4.0    # [build_platform != target_platform]
+    - cross-r-base {{ r-base }}    # [build_platform != target_platform]
   host:
     - r-base >=3.5.0
     - r-jsonlite
