@@ -22,6 +22,9 @@ $R -e "source('$RECIPE_DIR/test_script.R')"
 
 echo "### [SIRIUS] Check SIRIUS test script results"
 if [ ! -f "test_fragtree.txt" ]; then
-  echo Framgentation tree test failed!
+  echo "Framgentation tree test failed!"
   exit 1
 fi
+
+echo "Success!"
+exit 0
