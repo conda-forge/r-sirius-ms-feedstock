@@ -22,14 +22,14 @@ requirements:
     - m2-zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - r-base
+    - r-base >=4.0
     - r-jsonlite
     - r-httr2
     - r-r6
     - r-base64enc
     - r-stringr
   run:
-    - r-base
+    - r-base >=4.0
     - r-jsonlite
     - r-httr2
     - r-r6
