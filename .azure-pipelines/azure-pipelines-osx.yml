@@ -25,7 +25,6 @@ jobs:
       else
         export IS_PR_BUILD="False"
       fi
-      chmod +x ./.scripts/run_osx_build.sh
       ./.scripts/run_osx_build.sh
     displayName: Run OSX build
     env:
