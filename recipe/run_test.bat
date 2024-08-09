@@ -19,7 +19,7 @@ ECHO "### [EXE] RUN ILP SOLVER TEST"
 if errorlevel 1 exit 1
 
 ECHO "### [EXE] CHECK ILP SOLVER TEST"
-If not exist "%cd%\test_fragtree.txt" (
+If not exist "%cd%\test_fragtree.json" (
     echo "Framgentation tree test [EXE] failed!"
     exit 1
 )
