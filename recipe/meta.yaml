@@ -39,7 +39,7 @@ requirements:
     - r-base64enc
     - r-stringr
     - r-processx
-    - sirius-ms =6.0.3
+    - sirius-ms >=6.0.4
 
 test:
   files:
