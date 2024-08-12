@@ -3,15 +3,15 @@ About r-sirius-ms-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-sirius-ms-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/boecker-lab/sirius-client-openAPI/tree/master/client-api_r
+Home: https://github.com/sirius-ms/sirius-client-openAPI/tree/master/client-api_r
 
 Package license: Apache-2.0
 
 Summary: RSirius: R library for SIRIUS MS/MS analyses software.
 
-Development: https://github.com/boecker-lab/sirius-client-openAPI/tree/master/client-api_r
+Development: https://github.com/sirius-ms/sirius-client-openAPI/tree/master/client-api_r
 
-Documentation: https://boecker-lab.github.io/docs.sirius.github.io/
+Documentation: https://v6.docs.sirius-ms.io/
 
 R client for the SIRIUS (local) REST API (OpenAPI) that provides the full functionality of the SIRIUS
 MS/MS analyses software including its web based features as background service.
