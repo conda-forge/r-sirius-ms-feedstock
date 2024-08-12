@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/sirius-ms/sirius-client-openAPI/archive/refs/tags/{{ version }}.zip
-  sha256: cd10b707067765ff18276299aa8fe69e26b63f4dc56421516724ccd578f6f190
+  sha256: 046a99355a1932775f6863279146ad77408d9e91cf52d1d243bc3581f5085e16
 
 build:
   noarch: generic
