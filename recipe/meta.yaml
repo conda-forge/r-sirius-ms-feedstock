@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: generic
-  number: 0
+  number: 1
   merge_build_host: True  # [win]
   rpaths:
     - lib/R/lib/
@@ -49,15 +49,15 @@ test:
     - call run_test.bat        # [win]
 
 about:
-  home: https://github.com/boecker-lab/sirius-client-openAPI/tree/master/client-api_r
+  home: https://github.com/sirius-ms/sirius-client-openAPI/tree/master/client-api_r
   summary: 'RSirius: R library for SIRIUS MS/MS analyses software.'
   description: |
     R client for the SIRIUS (local) REST API (OpenAPI) that provides the full functionality of the SIRIUS 
     MS/MS analyses software including its web based features as background service.
   license: Apache-2.0
   license_file: client-api_r/LICENSE.txt
-  doc_url: https://boecker-lab.github.io/docs.sirius.github.io/
-  dev_url: https://github.com/boecker-lab/sirius-client-openAPI/tree/master/client-api_r
+  doc_url: https://v6.docs.sirius-ms.io/
+  dev_url: https://github.com/sirius-ms/sirius-client-openAPI/tree/master/client-api_r
 
 extra:
   recipe-maintainers:
