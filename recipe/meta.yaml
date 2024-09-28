@@ -1,6 +1,8 @@
+{% set apiVersion = "2.1" %}
+{% set siriusVersion = "6.0.4" %}
 #{% set siriusVersion = "6.0.4" %}
 #{% set apiVersion = "2.1" %}
-{% set version = "2.1+sirius6.0.6" %}
+{% set version = "2.1" %}
 {% set name = "r-sirius-ms" %}
 
 package:
@@ -9,12 +11,12 @@ package:
 
 source:
   url: https://github.com/sirius-ms/sirius-client-openAPI/archive/refs/tags/{{ version }}.zip
-  sha256: 8dc4aa7c08008cc14f229442ea3bcdca46f74cb0c5da7035de2b61fd08a0b366
+  sha256: 5e207d53c7e30139021b954e7ebb033e473f6f20dd0814804396053765d1b00f
 
 build:
   noarch: generic
-  number: 1
-  merge_build_host: True  # [win]
+  number: 0
+  merge_build_host: true  # [win]
   rpaths:
     - lib/R/lib/
     - lib/
