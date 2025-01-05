@@ -2,8 +2,16 @@ options(error = traceback)
 
 library('Rsirius')
 
+
+
 sdk <- SiriusSDK$new()
 sirius_api <- sdk$attach_or_start_sirius()
+
+wait_for_job <- function(pid, job) {
+  while (!(sirius_api$jobs_api$GetJob(pid, job$id)$progress$state == "DONE")) {
+    Sys.sleep(1)
+  }
+}
 
 project_id <- "test_project"
 project_dir <- paste(Sys.getenv('SRC_DIR'), project_id, sep="/")
@@ -22,9 +30,7 @@ job_submission$msNovelistParams$enabled <- FALSE
 job <- sirius_api$jobs_api$StartJob(project_id, job_submission)
 
 # Wait for job to finish
-while (sirius_api$jobs_api$GetJob(project_id, job$id)$progress$state != "DONE") {
-  Sys.sleep(1)
-}
+wait_for_job(project_id, job)
 
 aligned_feature_id <- sirius_api$features_api$GetAlignedFeatures(project_id)[[1]]$alignedFeatureId
 formula_candidate <- sirius_api$features_api$GetFormulaCandidates(project_id, aligned_feature_id)[[1]]
