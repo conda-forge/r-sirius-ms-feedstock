@@ -19,4 +19,3 @@ ECHO "### [EXE] RUN ILP SOLVER TEST"
 if errorlevel 1 exit 1
 
 echo "Success!"
-exit 0

@@ -20,7 +20,11 @@ job_submission$structureDbSearchParams$enabled <- FALSE
 job_submission$canopusParams$enabled <- FALSE
 job_submission$msNovelistParams$enabled <- FALSE
 job <- sirius_api$jobs_api$StartJob(project_id, job_submission)
-wait_for_job(project_id, job)
+
+# Wait for job to finish
+while (sirius_api$jobs_api$GetJob(project_id, job$id)$progress$state != "DONE") {
+  Sys.sleep(1)
+}
 
 aligned_feature_id <- sirius_api$features_api$GetAlignedFeatures(project_id)[[1]]$alignedFeatureId
 formula_candidate <- sirius_api$features_api$GetFormulaCandidates(project_id, aligned_feature_id)[[1]]
