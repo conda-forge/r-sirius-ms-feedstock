@@ -23,3 +23,4 @@ $R -e "source('$RECIPE_DIR/test_script.R')"
 
 
 echo "Success!"
+exit 0
