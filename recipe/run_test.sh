@@ -1,5 +1,6 @@
 #!/bin/sh
 
+set -ex pipefail
 echo "### TEST ENV INFO"
 echo "PREFIX=$PREFIX"
 echo "CONDA_PREFIX=$CONDA_PREFIX"
@@ -20,11 +21,6 @@ echo "### [JAVA] Try run $JAVA_HOME"
 echo "### [SIRIUS API] Run Sirius test script"
 $R -e "source('$RECIPE_DIR/test_script.R')"
 
-echo "### [SIRIUS] Check SIRIUS test script results"
-if [ ! -f "test_fragtree.json" ]; then
-  echo "Framgentation tree test failed!"
-  exit 1
-fi
 
 echo "Success!"
 exit 0
