@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://github.com/sirius-ms/sirius-client-openAPI/archive/refs/tags/{{ version }}.zip
-  sha256: e20baae5d767e8277b2bf905724d98c6684778bea28ae7cb212259feae52f028
+  sha256: 3ce6dc7a9da626d11ebda82b48f7bd88b1123a15a26328e9f01433dbc56b847d
 
 build:
   noarch: generic
-  number: 2
+  number: 3
   merge_build_host: true  # [win]
   rpaths:
     - lib/R/lib/
