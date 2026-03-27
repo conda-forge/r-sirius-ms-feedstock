@@ -1,4 +1,4 @@
-{% set version = "3.1+sirius6.3.3" %}
+{% set version = "3.1+sirius6.3.4" %}
 {% set sirius_version = version.split("sirius")[1] %}
 {% set name = "r-sirius-ms" %}
 
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://github.com/sirius-ms/sirius-client-openAPI/archive/refs/tags/{{ version }}.zip
-  sha256: cef6b8247c35635f05e22a88d80d627017733971034b1abc513d1421c9abaf76
+  sha256: 5d1b7da445955d1c626b6e0165760ae0c5df91b3aba7e6fcb5b88b3fe68a09d2
 
 build:
   noarch: generic
-  number: 4
+  number: 0
   merge_build_host: true  # [win]
   rpaths:
     - lib/R/lib/
